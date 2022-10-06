@@ -8,3 +8,23 @@ font-family: 'Playball', cursive;
 *, ::before, ::after{
     font-family: 'Old Standard TT', 'DM Serif Text', 'Times New Roman', Times, serif;
 }
+img{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    animation: fade 3s infinite ease-in-out;
+}
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
