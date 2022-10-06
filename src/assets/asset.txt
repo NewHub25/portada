@@ -1,0 +1,1 @@
+En esta carpeta van los activos y los códigos, tanto .js como .css

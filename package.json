@@ -1,0 +1,36 @@
+{
+  "name": "portada",
+  "version": "1.0.0",
+  "description": "Maquetación y diseño de portada para página propia",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack",
+    "serve": "webpack serve --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NewHub25/portada.git"
+  },
+  "keywords": [
+    "portada",
+    "javascript",
+    "proyecto"
+  ],
+  "author": "Terry I.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NewHub25/portada/issues"
+  },
+  "homepage": "https://github.com/NewHub25/portada#readme",
+  "devDependencies": {
+    "css-loader": "^6.7.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
+  }
+}
