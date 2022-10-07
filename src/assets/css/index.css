@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Old+Standard+TT:ital@0;1&family=Playball&display=swap');
-@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css');
 /*
-font-family: 'DM Serif Text', serif; --> tiene italic
-font-family: 'Old Standard TT', serif; --> tiene italic
+font-family: 'DM Serif Text', serif; --> tiene itaspanc
+font-family: 'Old Standard TT', serif; --> tiene itaspanc
 font-family: 'Playball', cursive;
 */
 *, ::before, ::after{
     font-family: 'Old Standard TT', 'DM Serif Text', 'Times New Roman', Times, serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
 }
 img{
     width: 100vw;
@@ -19,12 +24,120 @@ img{
         opacity: 0;
     }
     20%{
-        opacity: 1;
+        opacity: .7;
     }
     80%{
-        opacity: 1;
+        opacity: .7;
     }
     100%{
         opacity: 0;
+    }
+}
+.nav_menu{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 100px;
+    height: 80vh;
+    background-position: center;
+    border-radius: 20px;
+    padding: 10px;
+    animation: float 2s infinite ease-in-out;
+}
+.nav_menu::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: hsla(0, 0%, 100%, 0.4);
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+}
+@keyframes float {
+    0%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.nav-div_enlaces{
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+.nav-div_enlaces > span{
+    background: #009032;
+    width: 90px;
+    line-height: 50px;
+    border-radius: 20px;
+    padding: 5px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+}
+.nav-div_enlaces > span::before{
+    content: "";
+    position: absolute;
+    background: hsl(147, 92%, 53%);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0px;
+    height: 0px;
+    transition: all .3s ease-in-out;
+}
+.nav-div_enlaces > span:hover:before{
+    width: 120%;
+    height: 120%;
+}
+.nav-div_enlaces > span:nth-of-type(1){
+    background-position: 0 0%;
+}
+.nav-div_enlaces > span:nth-of-type(2){
+    background-position: 0 20%;
+}
+.nav-div_enlaces > span:nth-of-type(3){
+    background-position: 0 50%;
+}
+.nav-div_enlaces > span:nth-of-type(4){
+    background-position: 0 70%;
+}
+.nav-div_enlaces > span > a{
+    text-decoration: none;
+    font-family: 'DM Serif Text', serif;
+    font-size: 1.2em;
+    color: hsl(147, 92%, 53%);
+    z-index: 20;
+    position: relative;
+    transition: all .3s ease-in-out;
+}
+.nav-div_enlaces > span:hover > a{
+    color: hsl(267, 92%, 53%);
+}
+@media screen and (max-width: 576px){
+    .nav_menu{
+        width: 90vw;    
+        height: 70px;
+    }
+    .nav-div_enlaces{
+        flex-direction: row;
+    }
+    .nav-div_enlaces > span{
+        line-height: 30px;
+    }
+    .nav-div_enlaces > span > a{
+        font-size: 1em;
     }
 }
