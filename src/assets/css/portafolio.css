@@ -1,0 +1,48 @@
+.section_portafolio ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.section_portafolio ul > li{
+    min-width: 100px;
+    max-width: 200px;
+    /* flex: 200px; */
+    display: flex;
+    flex-direction: column;
+}
+.section_portafolio ul > li img{
+    border-radius: 10px;
+    height: 80%;
+    width: 100%;
+    object-fit: cover;
+}
+.section_portafolio ul > li p{
+    margin: 5px 0 0;
+    border-radius: 10px;
+    height: 25%;
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    background: linear-gradient(to bottom, hsla(147, 92%, 53%, 0.701), hsla(267, 92%, 53%, 0.507));
+    animation: rotar 1s infinite ease-in-out;
+    transition: all 1s;
+}
+.section_portafolio ul > li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: hsl(27, 92%, 53%);
+    text-shadow: 1px 1px #000;
+}
+@keyframes rotar {
+    0%{
+        transform: rotate(-1deg);
+    }
+    50%{
+        transform: rotate(1deg);
+    }
+    100%{
+        transform: rotate(-1deg);
+    }
+  }

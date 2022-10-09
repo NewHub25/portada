@@ -1,10 +1,12 @@
 //Archivos JS
 import './tipeo';
-//Se incorporan los estilos
+import './portfolio';
+//Se incorporan los estilos CSS
 import '../css/index.css';
 import '../css/menu.css';
 import '../css/inicio.css';
-//Se incorporan las imágenes './src/assets/images/anillo_del_sur.jpg'
+import '../css/portafolio.css';
+//Se incorporan las imágenes de la carpeta: './src/assets/images/'
 import anillo_del_sur from '../images/anillo_del_sur.jpg';
 import arena_conchas from '../images/arena_conchas.jpg';
 import bolas_navidad from '../images/bolas_navidad.jpg';
@@ -34,7 +36,7 @@ const fondos_body = [
 
 document.body.style.backgroundImage = `url(${fondos_body[fondos_body.length - 1]})`;
 const NAV_MENU = document.querySelector('[data-use="menu"]');
-const NAV_DIV_SPAN = document.querySelectorAll('.nav-div_enlaces > span');
+const NAV_DIV_SPAN = document.querySelectorAll('.nav-div_enlaces > a');
 
 //Cambiar el fondo web con muchas imágenes
 let cont = 0;
@@ -44,6 +46,7 @@ setInterval( () => {
     `url(${fondos_body[cont]})`;
     cont++;
 }, 3000);
-//Menu con fondo de madera y hojas
+
+//Fondos para el menu y cada boton
 NAV_MENU.style.backgroundImage = `url(${leaves})`;
 NAV_DIV_SPAN.forEach(span => span.style.backgroundImage = `url(${floor_wood})`);

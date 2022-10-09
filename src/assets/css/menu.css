@@ -1,5 +1,5 @@
 .nav_menu{
-    position: absolute;
+    position: fixed;
     top: 5%;
     left: 1%;
     width: 100px;
@@ -40,7 +40,8 @@
     align-items: center;
     gap: 10px;
 }
-.nav-div_enlaces > span{
+.nav-div_enlaces > a{
+    text-decoration: none;
     background: #009032;
     width: 90px;
     line-height: 50px;
@@ -52,7 +53,7 @@
     overflow: hidden;
     position: relative;
 }
-.nav-div_enlaces > span::before{
+.nav-div_enlaces > a::before{
     content: "";
     position: absolute;
     background: hsl(147, 92%, 53%);
@@ -64,31 +65,30 @@
     height: 0px;
     transition: all .3s ease-in-out;
 }
-.nav-div_enlaces > span:hover:before{
+.nav-div_enlaces > a:hover:before{
     width: 120%;
     height: 120%;
 }
-.nav-div_enlaces > span:nth-of-type(1){
+.nav-div_enlaces > a:nth-of-type(1){
     background-position: 0 0%;
 }
-.nav-div_enlaces > span:nth-of-type(2){
+.nav-div_enlaces > a:nth-of-type(2){
     background-position: 0 20%;
 }
-.nav-div_enlaces > span:nth-of-type(3){
+.nav-div_enlaces > a:nth-of-type(3){
     background-position: 0 50%;
 }
-.nav-div_enlaces > span:nth-of-type(4){
+.nav-div_enlaces > a:nth-of-type(4){
     background-position: 0 70%;
 }
-.nav-div_enlaces > span > a{
-    text-decoration: none;
+.nav-div_enlaces > a > span{
     font-family: 'DM Serif Text', serif;
     font-size: 1.2em;
     color: hsl(147, 92%, 53%);
     position: relative;
     transition: all .3s ease-in-out;
 }
-.nav-div_enlaces > span:hover > a{
+.nav-div_enlaces > a:hover > span{
     color: hsl(267, 92%, 53%);
 }
 @media screen and (max-width: 576px){
@@ -100,10 +100,10 @@
     .nav-div_enlaces{
         flex-direction: row;
     }
-    .nav-div_enlaces > span{
-        line-height: 30px;
+    .nav-div_enlaces > a{
+        line-height:20px;
     }
-    .nav-div_enlaces > span > a{
-        font-size: .9em;
+    .nav-div_enlaces > a > span{
+        font-size: .8em;
     }
 }
