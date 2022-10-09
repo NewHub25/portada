@@ -18,7 +18,7 @@ import tortuga_marina from '../images/tortuga_marina.jpg';
 import vaso_playa from '../images/vaso_playa.jpg';
 import leaves from '../images/leaves.jpg';
 import floor_wood from '../images/floor_wood.jpg';
-const fondos_importados = [
+const fondos_body = [
     anillo_del_sur,
     arena_conchas,
     bolas_navidad,
@@ -32,19 +32,18 @@ const fondos_importados = [
     vaso_playa
 ];
 
-const IMG_FONDO = document.getElementById('img_fondo');
-IMG_FONDO.src = fondos_importados[fondos_importados.length - 1];
+document.body.style.backgroundImage = `url(${fondos_body[fondos_body.length - 1]})`;
 const NAV_MENU = document.querySelector('[data-use="menu"]');
 const NAV_DIV_SPAN = document.querySelectorAll('.nav-div_enlaces > span');
 
 //Cambiar el fondo web con muchas imágenes
 let cont = 0;
 setInterval( () => {
-    if(cont > fondos_importados.length - 1) cont = 0;
-    IMG_FONDO.src = fondos_importados[cont];
+    if(cont > fondos_body.length - 1) cont = 0;
+    document.body.style.backgroundImage =
+    `url(${fondos_body[cont]})`;
     cont++;
 }, 3000);
-
 //Menu con fondo de madera y hojas
 NAV_MENU.style.backgroundImage = `url(${leaves})`;
 NAV_DIV_SPAN.forEach(span => span.style.backgroundImage = `url(${floor_wood})`);

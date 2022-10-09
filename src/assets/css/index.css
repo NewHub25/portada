@@ -11,6 +11,10 @@ font-family: 'Playball', cursive;
     box-sizing: border-box;
 }
 body{
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
     overflow: hidden;
 }
 .span_logo{
@@ -24,30 +28,11 @@ body{
     font-size: 1.5em;
     line-height: 50px;
     text-align: center;
-}
-img{
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    animation: fade 3s infinite ease-in-out;
-}
-@keyframes fade {
-    0%{
-        opacity: 0;
-    }
-    20%{
-        opacity: .7;
-    }
-    80%{
-        opacity: .7;
-    }
-    100%{
-        opacity: 0;
-    }
+    z-index: 100;
 }
 .section_portada{
     position: absolute;
-    top: 15%;
+    top: -100vh;
     left: 20%;
     width: 75vw;
     height: 80vh;

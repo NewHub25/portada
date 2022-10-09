@@ -4,10 +4,10 @@ import Typed from 'typed.js';
 //Animancion de tipeo
 const typed = new Typed('.typed', {
     strings: [
-        '<i class="section-span_i">desarrollador web</i>',
-        '<i class="section-span_i">full stack</i>',
-        '<i class="section-span_i">web developer</i>',
-    ],
+        'desarrollador web',
+        'diseñador de páginas',
+        'creador online web',
+    ].map(item => `<i class="section-span_i">${item}</i>`),
     typeSpeed: 75,
     startDelay: 300,
     backSpeed: 75,

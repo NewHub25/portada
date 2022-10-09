@@ -8,6 +8,7 @@
     border-radius: 20px;
     padding: 10px;
     animation: float 2s infinite ease-in-out;
+    z-index: 90;
 }
 .nav_menu::before{
     content: "";
@@ -84,7 +85,6 @@
     font-family: 'DM Serif Text', serif;
     font-size: 1.2em;
     color: hsl(147, 92%, 53%);
-    z-index: 20;
     position: relative;
     transition: all .3s ease-in-out;
 }
@@ -104,6 +104,6 @@
         line-height: 30px;
     }
     .nav-div_enlaces > span > a{
-        font-size: 1em;
+        font-size: .9em;
     }
 }
