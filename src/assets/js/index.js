@@ -1,4 +1,10 @@
+//Archivos JS
+import './tipeo';
+//Se incorporan los estilos
 import '../css/index.css';
+import '../css/menu.css';
+import '../css/inicio.css';
+//Se incorporan las imágenes './src/assets/images/anillo_del_sur.jpg'
 import anillo_del_sur from '../images/anillo_del_sur.jpg';
 import arena_conchas from '../images/arena_conchas.jpg';
 import bolas_navidad from '../images/bolas_navidad.jpg';

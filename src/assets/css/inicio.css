@@ -1,0 +1,13 @@
+.section_inicio{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 4em;
+    font-style: italic;
+}
+@media screen and (max-width: 576px){
+    .section_inicio{
+        font-size: 3em;
+    }
+}
