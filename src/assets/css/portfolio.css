@@ -1,24 +1,27 @@
-.section_portafolio ul{
-    list-style: none;
+.section_portafolio div{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    justify-content: space-around;
     gap: 10px;
+    flex-wrap: wrap;
 }
-.section_portafolio ul > li{
+.section_portafolio div > a{
+    text-decoration: none;
     min-width: 100px;
     max-width: 200px;
     /* flex: 200px; */
     display: flex;
     flex-direction: column;
 }
-.section_portafolio ul > li img{
+.section_portafolio div > a img{
     border-radius: 10px;
     height: 80%;
     width: 100%;
     object-fit: cover;
 }
-.section_portafolio ul > li p{
+.section_portafolio div > a:hover img{
+    transform: rotate(5deg) scale(1.1);
+}
+.section_portafolio div > a p{
     margin: 5px 0 0;
     border-radius: 10px;
     height: 25%;
@@ -26,14 +29,11 @@
     font-size: 15px;
     padding: 5px;
     background: linear-gradient(to bottom, hsla(147, 92%, 53%, 0.701), hsla(267, 92%, 53%, 0.507));
-    animation: rotar 1s infinite ease-in-out;
-    transition: all 1s;
-}
-.section_portafolio ul > li a{
-    text-decoration: none;
-    font-weight: bold;
+    animation: rotar .7s infinite ease-in-out;
+    transition: all .7s;
     color: hsl(27, 92%, 53%);
     text-shadow: 1px 1px #000;
+    transform-origin: top;
 }
 @keyframes rotar {
     0%{
@@ -45,4 +45,4 @@
     100%{
         transform: rotate(-1deg);
     }
-  }
+}

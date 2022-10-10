@@ -5,7 +5,7 @@ import './portfolio';
 import '../css/index.css';
 import '../css/menu.css';
 import '../css/inicio.css';
-import '../css/portafolio.css';
+import '../css/portfolio.css';
 //Se incorporan las imágenes de la carpeta: './src/assets/images/'
 import anillo_del_sur from '../images/anillo_del_sur.jpg';
 import arena_conchas from '../images/arena_conchas.jpg';
@@ -34,19 +34,20 @@ const fondos_body = [
     vaso_playa
 ];
 
-document.body.style.backgroundImage = `url(${fondos_body[fondos_body.length - 1]})`;
-const NAV_MENU = document.querySelector('[data-use="menu"]');
+const IMG = document.getElementById('img');
+const NAV_DIV = document.querySelector('[data-use="menu"]');
 const NAV_DIV_SPAN = document.querySelectorAll('.nav-div_enlaces > a');
 
+//Pintando fondos para el menu y cada boton
+NAV_DIV.style.backgroundImage = `url(${leaves})`;
+NAV_DIV_SPAN.forEach(span => span.style.backgroundImage = `url(${floor_wood})`);
+
 //Cambiar el fondo web con muchas imágenes
+IMG.src = fondos_body[fondos_body.length - 1];
+// document.body.style.backgroundImage = `url(${fondos_body[fondos_body.length - 1]})`;
 let cont = 0;
-setInterval( () => {
+let intervalImg = setInterval( () => {
     if(cont > fondos_body.length - 1) cont = 0;
-    document.body.style.backgroundImage =
-    `url(${fondos_body[cont]})`;
+    IMG.src = fondos_body[cont];
     cont++;
 }, 3000);
-
-//Fondos para el menu y cada boton
-NAV_MENU.style.backgroundImage = `url(${leaves})`;
-NAV_DIV_SPAN.forEach(span => span.style.backgroundImage = `url(${floor_wood})`);
