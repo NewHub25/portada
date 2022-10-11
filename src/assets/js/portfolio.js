@@ -19,37 +19,37 @@ const proyectosDatos = [
     {
         src: pokedex,
         alt: 'Aplicación para buscar pokemones',
-        detalle: 'Juega viendo qué pokemon es más poderoso 🤩',
+        detalle: 'Juega viendo qué pokemon es más poderoso',
         url: 'https://programandoconterry.web.app/pokedex/index.html',
     },
     {
         src: smooth,
         alt: 'Mover la página suavemente',
-        detalle: 'Mira el efecto de scroll suave con CSS 😵',
+        detalle: 'Mira el efecto de scroll suave con CSS',
         url: 'https://programandoconterry.web.app/smooth/smoothScroll.html',
     },
     {
         src: text_gradient,
         alt: 'Efecto de texto gradiente',
-        detalle: 'Wuah, mira este efecto en el mes de la patria 🤠',
+        detalle: 'Wuah, mira este efecto en el mes de la patria',
         url: 'https://programandoconterry.web.app/test/animationTextGradient.html',
     },
     {
         src: notification,
         alt: 'Notificaciones en la web',
-        detalle: 'Ejemplo de notificaciones en la web 🙂',
+        detalle: 'Ejemplo de notificaciones en la web',
         url: 'https://programandoconterry.web.app/test/Notification.html',
     },
     {
         src: juego_pelota,
         alt: 'Juego para derrivar ladrillos',
-        detalle: 'Juego para derrivar ladrillos con una pelota 😂',
+        detalle: 'Juego para derrivar ladrillos con una pelota',
         url: 'https://programandoconterry.web.app/juego-pelota/pelota.html',
     },
     {
         src: beautifulScroll,
         alt: 'Hermoso efecto de aparición',
-        detalle: 'Hermoso efecto de aparición y gatos 😊',
+        detalle: 'Hermoso efecto de aparición y gatos',
         url: 'https://programandoconterry.web.app/beautifulScroll/beautifulScroll.html',
     },
 ];
