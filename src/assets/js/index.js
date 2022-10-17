@@ -1,11 +1,14 @@
 //Archivos JS
-import './tipeo';
-import './portfolio';
+// import './tipeo';
+// import './portfolio';
+// import './contacto';
 //Se incorporan los estilos CSS
 import '../css/index.css';
 import '../css/menu.css';
 import '../css/inicio.css';
-import '../css/portfolio.css';
+import '../css/portafolio.css';
+import '../css/sobreMi.css';
+import '../css/contacto.css';
 //Se incorporan las imágenes de la carpeta: './src/assets/images/'
 import anillo_del_sur from '../images/anillo_del_sur.jpg';
 import arena_conchas from '../images/arena_conchas.jpg';

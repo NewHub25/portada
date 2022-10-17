@@ -1,0 +1,64 @@
+:root{
+    --agua: #00dfc4;
+    --pared: #1c2b3a;
+}
+.section_contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.section_contacto h2{
+    color: #222;
+    text-shadow: 2px 2px rgb(50, 255, 238);
+    font-size: 2em;
+}
+/* Cambiarlo */
+.inputBox{
+    position: relative;
+    width: 250px;
+}
+.inputBox input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #fff4;
+    background: var(--pared);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1em;
+    outline: none;
+}
+.inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    color: #fff4;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.inputBox input:valid,
+.inputBox input:focus{
+    border: 1px solid var(--agua);
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span{
+    color: var(--agua);
+    transform: translate(10px, -7px);
+    font-size: .65em;
+    padding: 0 10px;
+    background: var(--pared);
+    border-left: 1px solid var(--agua);
+    border-right: 1px solid var(--agua);
+}
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span{
+    background: var(--agua);
+    color: var(--pared);
+    border-radius: 5px;
+    line-height: 13px;
+}
+[value="Enviar"]{
+    font-size: 1.5em;
+}

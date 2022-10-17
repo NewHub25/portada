@@ -5,6 +5,9 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/assets/js/index.js',
+        contacto: './src/assets/js/contacto.js',
+        portfolio: './src/assets/js/portfolio.js',
+        tipeo: './src/assets/js/tipeo.js',
     },
     output: {
         filename: '[name].bundle.js',

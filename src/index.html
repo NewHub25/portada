@@ -7,6 +7,7 @@
     <title>INICIO</title>
 </head>
 <body>
+    <h1>PORTADA</h1>
     <img src="" id="img" alt="">
     <!-- Logo de la página -->
     <span class="span_logo">Terry.io</span>
@@ -27,10 +28,27 @@
         <div></div>
     </section>
     <section class="section_portada section_sobreMi" id="sobreMi">
-        <span>Hola,<br>soy Terry,<br><span class="typed"></span></span>
+        <nav>
+            <h2>Un poco de mi historia</h2>
+            <p>He estado estudiando por años el aspecto de la tecnología y cómo ésta ha cambiado nuestras vidas.
+                He llegado a dominar JAVASCRIPT, CSS, así como empaquetadores como webpack,
+                y ahora estoy estudiando la librería de facebook: REACT, luego entraré a fondo sobre MongoDB</p>
+        </nav>
     </section>
     <section class="section_portada section_contacto" id="contacto">
-        <span>Hola,<br>soy Terry,<br><span class="typed"></span></span>
+        <form name="formato" action="POST">
+            <h2>Te enviaré un "gracias" por tus sugerencias</h2>
+            <nav class="inputBox">
+                <input type="text" required="required" name="nombre">
+                <span>Nombre</span>
+            </nav>
+            <nav class="inputBox">
+                <input type="text" required="required" name="correo">
+                <span>Correo</span>
+            </nav>
+            <textarea name="sugerencia" id="sugerencia" cols="50" rows="10"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
     </section>
 </body>
 </html>

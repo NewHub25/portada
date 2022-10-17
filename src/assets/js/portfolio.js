@@ -1,26 +1,38 @@
 //Se incorporan las imágenes de la carpeta './src/assets/images/portfolio'
-import enlaces from '../images/portfolio/enlaces.jpg';
 import pokedex from '../images/portfolio/pokedex.jpg';
+import beautifulScroll from '../images/portfolio/beautifulScroll.jpg';
+import juego_pelota from '../images/portfolio/juego_pelota.jpg';
+import enlaces from '../images/portfolio/enlaces.jpg';
 import smooth from '../images/portfolio/smooth.jpg';
 import text_gradient from '../images/portfolio/text_gradient.jpg';
 import notification from '../images/portfolio/notification.jpg';
-import juego_pelota from '../images/portfolio/juego_pelota.jpg';
-import beautifulScroll from '../images/portfolio/beautifulScroll.jpg';
 
 const DIV_PORTAFOLIO = document.querySelector('.section_portafolio > div');
 
 const proyectosDatos = [
     {
-        src: enlaces,
-        alt: 'Enlaces para guardar',
-        detalle: 'Aquí puedes guardar tus enlaces favoritos 😎',
-        url: 'https://programandoconterry.web.app/test/pegarEnlace.html',
-    },
-    {
         src: pokedex,
         alt: 'Aplicación para buscar pokemones',
         detalle: 'Juega viendo qué pokemon es más poderoso',
         url: 'https://programandoconterry.web.app/pokedex/index.html',
+    },
+    {
+        src: beautifulScroll,
+        alt: 'Hermoso efecto de aparición',
+        detalle: 'Hermoso efecto de aparición y gatos',
+        url: 'https://programandoconterry.web.app/beautifulScroll/beautifulScroll.html',
+    },
+    {
+        src: juego_pelota,
+        alt: 'Juego para derrivar ladrillos',
+        detalle: 'Juego para derrivar ladrillos con una pelota',
+        url: 'https://programandoconterry.web.app/juego-pelota/pelota.html',
+    },
+    {
+        src: enlaces,
+        alt: 'Enlaces para guardar',
+        detalle: 'Aquí puedes guardar tus enlaces favoritos 😎',
+        url: 'https://programandoconterry.web.app/test/pegarEnlace.html',
     },
     {
         src: smooth,
@@ -39,18 +51,6 @@ const proyectosDatos = [
         alt: 'Notificaciones en la web',
         detalle: 'Ejemplo de notificaciones en la web',
         url: 'https://programandoconterry.web.app/test/Notification.html',
-    },
-    {
-        src: juego_pelota,
-        alt: 'Juego para derrivar ladrillos',
-        detalle: 'Juego para derrivar ladrillos con una pelota',
-        url: 'https://programandoconterry.web.app/juego-pelota/pelota.html',
-    },
-    {
-        src: beautifulScroll,
-        alt: 'Hermoso efecto de aparición',
-        detalle: 'Hermoso efecto de aparición y gatos',
-        url: 'https://programandoconterry.web.app/beautifulScroll/beautifulScroll.html',
     },
 ];
 

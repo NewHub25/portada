@@ -1,0 +1,10 @@
+.section_sobreMi nav{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.section_sobreMi nav *{
+    text-align: center;
+    text-shadow: 1px 1px #009032;
+}

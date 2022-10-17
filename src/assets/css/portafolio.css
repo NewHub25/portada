@@ -1,7 +1,10 @@
+.section_portafolio{
+    overflow: auto;
+}
 .section_portafolio div{
     display: flex;
     justify-content: space-around;
-    gap: 10px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 .section_portafolio div > a{
