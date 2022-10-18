@@ -1,4 +1,4 @@
-.section_inicio{
+.main_inicio{
     text-align: left;
     display: flex;
     align-items: center;
@@ -10,7 +10,7 @@
     color: #fff;
 }
 @media screen and (max-width: 576px){
-    .section_inicio{
+    .main_inicio{
         font-size: 3em;
     }
 }
