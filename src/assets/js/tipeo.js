@@ -7,6 +7,8 @@ const typed = new Typed('.typed', {
         'desarrollador web',
         'diseñador de páginas',
         'creador online web',
+        'full stack',
+        'web developer',
     ].map(item => `<i class="section-span_i">${item}</i>`),
     typeSpeed: 75,
     startDelay: 300,

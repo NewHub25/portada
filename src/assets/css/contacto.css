@@ -5,6 +5,9 @@
 input, textarea{
     outline: none;
 }
+.section_contacto{
+    position: relative;
+}
 .section_contacto form{
     height: 80%;
     display: flex;
@@ -25,6 +28,7 @@ input, textarea{
 .form_nav{
     position: relative;
     width: 100%;
+    z-index: 100;
 }
 .form_nav input{
     width: 100%;
@@ -35,8 +39,9 @@ input, textarea{
     color: #fff;
     font-size: 1em;
     outline: none;
+    position: relative;
 }
-.form_nav span{
+.form_nav .input-title_span{
     position: absolute;
     left: 0;
     padding: 10px;
@@ -45,18 +50,12 @@ input, textarea{
     text-transform: uppercase;
     transition: .5s;
 }
-.form_nav input:invalid{
-    color: #f00;
-}
-.form_nav input:valid{
-    color: #0f0;
-}
 .form_nav input:valid,
 .form_nav input:focus{
     border: 1px solid var(--agua);
 }
-.form_nav input:valid + span,
-.form_nav input:focus + span{
+.form_nav input:not(:placeholder-shown) + .input-title_span,
+.form_nav input:focus + .input-title_span{
     color: var(--agua);
     background: var(--pared);
     padding: 0 10px;
@@ -66,33 +65,68 @@ input, textarea{
     border-left: 1px solid var(--agua);
 }
 
-.form_nav:nth-of-type(2) input:valid ~ span,
-.form_nav:nth-of-type(2) input:focus ~ span{
+.form_nav:nth-of-type(2) input:not(:placeholder-shown) ~ .input-title_span,
+.form_nav:nth-of-type(2) input:focus ~ .input-title_span{
     background: var(--agua);
     color: var(--pared);
     border-radius: 5px;
     line-height: 13px;
     font-weight: bold;
 }
-
-.inputText{
+.form_nav .icon{
+    color: #009032;
+    font-size: 1.7em;
+    position: absolute;
+    right: 0;
+    top: 5px;
+}
+.form_nav .icon:nth-of-type(2){
+    color: hsl(141, 91%, 54%);
+}
+.form_nav .icon:nth-of-type(3){
+    color: crimson;
+}
+.form_nav .icon:nth-of-type(2){
+    display: none;
+}
+.form_nav .icon:nth-of-type(3){
+    display: none;
+}
+.form_nav input:valid ~ .icon:nth-of-type(2){
+    display: block;
+}
+.form_nav input:invalid ~ .icon:nth-of-type(3){
+    display: block;
+}
+.inputText_nav{
     width: 100%;
 }
-.inputText textarea{
+.inputText_nav textarea{
     width: 100%;
     font-size: 1.5em;
     border-radius: 10px;
+    background: hsl(49, 86%, 83%);
 }
 [value="Enviar"]{
     width: 50%;
     font-size: 1.5em;
-    color: #333;
+    color: #eee;
     font-weight: bold;
     border-radius: 7px;
     border: none;
-    background: #0090de;
+    background: hsl(201, 100%, 40%);
     transition: transform .5s;
+    letter-spacing: .2em;
 }
 [value="Enviar"]:active{
     transform: translateY(5px);
+}
+@media screen and (max-width: 576px){
+    .inputText_nav textarea{
+        height: 70px;
+    }
+    .section_contacto form{
+        position: absolute;
+        bottom: 0;
+    }
 }

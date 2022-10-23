@@ -29,13 +29,18 @@
     </section>
     <section class="section_portada section_sobreMi" id="sobreMi">
       <nav>
-        <h2>Un poco de mi historia</h2>
+        <h2><span>Un poco de mi historia</span></h2>
         <p>
-          He estado estudiando por años el aspecto de la tecnología y cómo ésta
-          ha cambiado nuestras vidas. He llegado a dominar JAVASCRIPT, CSS, sí
-          como empaquetadores como webpack, y ahora estoy estudiando la librería
-          de facebook: REACT, luego entraré a fondo sobre MongoDB
+          He estado estudiando por años el aspecto de la tecnología y me
+          sorprende cómo ésta ha cambiado nuestras vidas. He llegado a dominar
+          JAVASCRIPT, CSS, sí como empaquetadores como webpack, y ahora estoy
+          estudiando la librería de facebook: REACT, luego entraré a fondo sobre
+          MongoDB
         </p>
+        <img src="" alt="Terry" id="terry">
+      </nav>
+      <nav>
+        <canvas id="myChart"></canvas>
       </nav>
     </section>
     <section class="section_portada section_contacto" id="contacto">
@@ -52,15 +57,34 @@
             required
             name="from_name"
             id="from_name"
-            pattern="[a-zA-Z]+"
+            pattern="[a-zA-Z ]+"
+            placeholder=" "
           />
-          <span>Tu nombre</span>
+          <span class="input-title_span">Tu nombre</span>
+          <span class="icon">
+            <ion-icon name="checkmark-circle"></ion-icon>
+          </span>
+          <span class="icon">
+            <ion-icon name="alert-circle"></ion-icon>
+          </span>
         </nav>
         <nav class="form_nav">
-          <input type="email" required name="email_id" id="email_id" />
-          <span>Tu correo</span>
+          <input
+            type="email"
+            required
+            name="email_id"
+            id="email_id"
+            placeholder=" "
+          />
+          <span class="input-title_span">Tu correo</span>
+          <span class="icon">
+            <ion-icon name="checkmark-circle"></ion-icon>
+          </span>
+          <span class="icon">
+            <ion-icon name="alert-circle"></ion-icon>
+          </span>
         </nav>
-        <nav class="inputText">
+        <nav class="inputText_nav">
           <textarea
             cols="10"
             rows="5"
@@ -73,5 +97,13 @@
         <input type="submit" value="Enviar" />
       </form>
     </section>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
