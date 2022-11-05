@@ -6,6 +6,7 @@ import enlaces from '../images/portfolio/enlaces.jpg';
 import smooth from '../images/portfolio/smooth.jpg';
 import text_gradient from '../images/portfolio/text_gradient.jpg';
 import notification from '../images/portfolio/notification.jpg';
+import mutabilidad from '../images/portfolio/mutabilidad.jpg';
 
 const DIV_PORTAFOLIO = document.querySelector('.section_portafolio > div');
 
@@ -51,6 +52,12 @@ const proyectosDatos = [
         alt: 'Notificaciones en la web',
         detalle: 'Ejemplo de notificaciones en la web',
         url: 'https://programandoconterry.web.app/test/Notification.html',
+    },
+    {
+        src: mutabilidad,
+        alt: 'Metodos mutables de JavaScript',
+        detalle: 'Metodos mutables de JavaScript',
+        url: 'https://programandoconterry.web.app/mutabilidad/mutabilidad.html',
     },
 ];
 
